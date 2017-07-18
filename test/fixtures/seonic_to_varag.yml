@@ -1,0 +1,119 @@
+rewrites:
+  - qu|q
+  - th|þ
+  - dh|ð
+  - sh|š
+  - ai|á
+  - au|à
+  - ei|é
+  - eu|è
+  - eo|è
+  - iu|ì
+  - ii|í
+  - oi|ò
+  - ou|ó
+  - ui|ù
+  - uu|ú
+  - h|c
+categories:
+  - V=aiueo
+  - L=áàéèìíòóùú
+  - C=qwrtypsdfghjkzxcvbnmðþ
+  - A=tpkdbgvþsch
+  - B=þfctpkbdzgg
+  - D=tdðþ
+  - S=szš
+  - U=tpsfhkcþš
+  - F=ua
+  - G=ae
+  - N=âîûêô
+rules:
+  - a/o/_
+  - u/a/_
+  - o/u/_
+  - i/e/_
+  - á/a/_
+  - à/a/_
+  - é/e/_
+  - è/e/_
+  - ì/i/_
+  - í/i/_
+  - ò/o/_
+  - ó/o/_
+  - ù/u/_
+  - ú/u/_
+  - k/h/#_
+  - t/þ/#_
+  - p/v/#_
+  - c//V_C
+  - sk/š/_
+  - A/B/_
+  - o/a/_
+  - ó/á/_
+  - m/n/_#
+  - m/n/_D
+  - L//_#
+  - en/in/_
+  - z//_#
+  - V//_#
+  - iu/ú/_#
+  - z/r/_
+  - q/ku/_
+  - e/o/_
+  - w/v/#_
+  - w//_i
+  - w//_e
+  - w/v/_a
+  - w/v/_o
+  - w/v/_u
+  - er/ir/_
+  - eD/iD/_
+  - hr/ks/_
+  - è/ú/_
+  - V//_#
+  - é/á/_
+  - F/G/_
+  - o/a/_
+  - r//_#
+  - i/e/U_
+  - oe/oi/_
+  - ao/au/_
+  - mn/nn/_
+  - i/e/_#
+  - aa/ai/_
+seonic:
+  weson: varan
+  wesic: varag
+  shultus: shelth
+  tumun: demen
+  kousyo: gery
+  korwas: garw
+  menter: mintha
+  avtero: abtha
+  aneo: an # ana
+  alos: al
+  altas: alth
+  nemos: nam
+  saquos: rak
+  asas: a
+  alio: al # al
+  altero: altha
+  sever: raba
+  anvictos: anbath # anbagth
+  an: an
+  eisos: a
+  gonias: kan # kana
+  annos: ann
+  beras: pa
+  ber: pa
+  toquo: dak
+  anveldas: anbalt
+  coro: ga
+  octos: ath
+  abel: apal
+  meilus: mal # male
+  korius: ga # gare
+  kerric: garrag
+  anvo: anb
+  tactus: dath # dathe
+  luukas: lah
