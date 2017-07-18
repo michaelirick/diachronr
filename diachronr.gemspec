@@ -9,9 +9,9 @@ Gem::Specification.new do |gem|
   gem.authors       = ['Miker Irick']
   gem.email         = ['michaelirick@gmail.com']
   gem.description   = 'applies sound changes to constructed languages'
-  gem.summary       = 'applies sound changes to constructed languages'
+  gem.summary       = 'applies diachronic sound changes to constructed languages'
   gem.homepage      = 'http://michaelirick.com'
-  gem.license       = 'BEERWARE'
+  gem.license       = 'Nonstandard'
 
   gem.files         = `git ls-files`.split($RS)
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'slop', '~> 3.4'
 
-  gem.add_development_dependency 'simplecov'
-  gem.add_development_dependency 'pry'
-  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'simplecov', '~> 0'
+  gem.add_development_dependency 'pry', '~> 0'
+  gem.add_development_dependency 'rake', '~> 0'
 end
