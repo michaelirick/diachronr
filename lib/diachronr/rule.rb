@@ -24,13 +24,14 @@ module Diachronr
     end
 
     def get_categories(value, categories)
-      categories.select { |c| value.include? c.sign }
+      categories.select { |c| value && value.include?(c.sign) }
     end
 
     def new_to(categories, category_index, index)
       t = get_categories(to, categories)[category_index]
       return to if t.nil?
-      t.contents[index]
+      contents = t.contents.chars.include?(',') ? t.contents.split(',') : t.contents.chars
+      contents[index]
     end # new_to
 
     def new_from(category, char)
@@ -40,7 +41,8 @@ module Diachronr
     def category_rules(categories)
       rules = []
       get_categories(from, categories).each_with_index do |cat, i|
-        cat.contents.each_char.with_index do |f, fi|
+        contents = cat.contents.chars.include?(',') ? cat.contents.split(',') : cat.contents.chars
+        contents.each.with_index do |f, fi|
           rules << Rule.new(
             "#{new_from(cat, f)}/#{new_to(categories, i, fi)}/#{condition}"
           )
