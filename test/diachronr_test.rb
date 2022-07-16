@@ -31,7 +31,14 @@ class DiachronrTest < Minitest::Test
   def test_apply_ruleset
     r = Diachronr::RuleSet.load 'test/fixtures/seonic_to_varag.yml'
     r.options['seonic'].each do |seonic, varag|
-      assert_equal r.apply(seonic), varag
+      assert_equal varag, r.apply(seonic)
+    end
+  end
+
+  def test_apply_ruleset_multi_category
+    r = Diachronr::RuleSet.load 'test/fixtures/multi-char.yml'
+    r.options['test'].each do |from, to|
+      assert_equal to, r.apply(from)
     end
   end
 

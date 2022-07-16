@@ -1,0 +1,13 @@
+rewrites: []
+categories:
+  - A=st,zd
+  - B=ff,vv
+  - C=kʷ,
+  - D=wh,
+rules:
+  - A/B/_
+  - C/D/_
+test:
+  star: ffar
+  zdar: vvar
+  kʷékʷlos: whéwhlos
